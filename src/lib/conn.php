@@ -3,7 +3,7 @@
     $mysql_conf=array(
         'host'=>'localhost:3306',
         'db_user'=>'root',
-        'db_pwd'=>'20121221',
+        'db_pwd'=>'',
         'db'=>'myuser'
     );
     $mysqli = @new mysqli($mysql_conf['host'],$mysql_conf['db_user'],$mysql_conf['db_pwd']);

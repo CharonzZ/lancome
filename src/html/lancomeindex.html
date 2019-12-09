@@ -17,7 +17,7 @@
     <script src="../js/banner2.js"></script>
     <script src="../js/cookie.js"></script>
     <script>
-        $(function() {
+        $(function () {
             if (!cookie.get("isLogin")) {
                 $('#username').html('<i class="iconfont">&#xe640;</i>');
                 $('#loginout').text('');
@@ -25,7 +25,7 @@
                 $('#username').html(cookie.get('username'));
                 $('#loginout').text('退出');
                 // $('.line').text('');
-                $('#loginout').on('click', function() {
+                $('#loginout').on('click', function () {
                     cookie.remove('isLogin');
                     cookie.remove('username');
                     location.reload();
@@ -37,12 +37,13 @@
 
 
 <body>
+    <!-- <div class="beset"> -->
     <!-- 头部结构——logo、导航、二级导航 -->
     <div class="header">
         <!-- 头部logo -->
         <div class="header-top">
             <div class="header-top-container">
-                <a href="https://www.lancome.com.cn/">
+                <a href="../html/lancomeindex.html">
                     <img src="../img/logo@2x.png" alt="">
                 </a>
             </div>
@@ -371,7 +372,8 @@
 
                     </li>
                     <li>
-                        <a href="javascript:;" id="loginout" style="color: #fff;width: 100px;margin-left: 20px;font-size: 20px;">退出</a>
+                        <a href="javascript:;" id="loginout"
+                            style="color: #fff;width: 100px;margin-left: 20px;font-size: 20px;">退出</a>
                     </li>
 
                 </ul>
@@ -379,7 +381,8 @@
         </div>
     </div>
 
-    <!-- 第一个轮播图 -->
+    <!-- 第二个轮播图 -->
+    <!-- <div class="firstlb"> -->
     <div id="demo01" class="flexslider">
 
         <ul class="slides">
@@ -425,13 +428,15 @@
             </li>
         </ul>
     </div>
+    <!-- </div> -->
 
     <!-- 当季推荐 -->
     <div class="banner-innertitle">
         <h3>当季推荐</h3>
     </div>
 
-    <!-- 第二个轮播图 -->
+    <!-- 第一个轮播图 -->
+    <!-- <div class="behindlb"> -->
     <div class="banner" id="b03">
 
         <ul>
@@ -491,12 +496,12 @@
                 </div>
             </li>
             <script>
-                $(function() {
+                $(function () {
                     $.ajax({
                         type: "get",
                         url: "../lib/get.php",
                         dataType: "json",
-                        success: function(data) {
+                        success: function (data) {
                             console.log(data)
                             let temp = '';
                             data.forEach((elm, i) => {
@@ -633,6 +638,7 @@
             </li>
         </ul>
     </div>
+    <!-- </div> -->
 
     <!-- 菁纯奢宠臻献 -->
     <div class="banner-innertitle">
@@ -857,11 +863,14 @@
         </div>
 
         <div class="copyright">
-            <p class="first01">© L’Oreal China 欧莱雅（中国）有限公司版权所有&nbsp;&nbsp;&nbsp;中国工商 沪ICP备08100043号-34&nbsp;&nbsp;沪公网安备&nbsp;&nbsp;31010602001526号</p>
+            <p class="first01">© L’Oreal China 欧莱雅（中国）有限公司版权所有&nbsp;&nbsp;&nbsp;中国工商
+                沪ICP备08100043号-34&nbsp;&nbsp;沪公网安备&nbsp;&nbsp;31010602001526号</p>
             <p class="first02">使用条款&nbsp;&nbsp;Cookies政策&nbsp;&nbsp;隐私政策</p>
-            <p class="first02" style="margin: 0 auto 60px;">浏览该网站表示您接受并同意我们使 用cookies为您提供个性化的浏览体验。点击Cookies政策了解详情</p>
+            <p class="first02" style="margin: 0 auto 60px;">浏览该网站表示您接受并同意我们使 用cookies为您提供个性化的浏览体验。点击Cookies政策了解详情
+            </p>
         </div>
     </div>
+
 
 
 
@@ -887,7 +896,7 @@
     <script type="text/javascript " src="../js/banner.js "></script>
 
     <script type="text/javascript ">
-        $(function() {
+        $(function () {
 
 
 
@@ -920,7 +929,7 @@
 
     <!-- 第二轮播图js -->
     <script>
-        $(document).ready(function(e) {
+        $(document).ready(function (e) {
 
             $('#b03').unslider({
 

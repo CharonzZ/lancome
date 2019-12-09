@@ -2,14 +2,14 @@
   height: 680px;
 }
 .banner .banner2-box {
-  width: 1500px;
+  width: 1400px;
   height: auto;
   box-sizing: border-box;
   margin: 0 auto;
 }
 .banner .banner2-box .product-box {
-  width: 500px;
-  padding: 0 20px;
+  width: 466.66666667px;
+  padding: 0;
   box-sizing: border-box;
   float: left;
 }
